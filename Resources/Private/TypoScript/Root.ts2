@@ -1,0 +1,23 @@
+prototype(Futjikato.FlexTeaser:FlexTeaser) < prototype(TYPO3.Neos:Content) {
+    templatePath = 'resource://Futjikato.FlexTeaser/Private/Templates/TeaserFrame.html'
+
+    @context.rendererName = ${q(node).property('renderer') ? q(node).property('renderer') : ''}
+    itemRenderer = ContentCase {
+        selectedRenderer {
+            condition = ${rendererName != ''}
+            type = ${rendererName}
+        }
+        fallback {
+            condition= TRUE
+            renderer = Futjikato.FlexTeaser:FallbackTeaser
+        }
+    }
+
+    @context.baseNode = ${q(node).property('teaserPage') ? q(node).property('teaserPage') : documentNode }
+    pageNode = ${Futjikato.Strategy.getTeaserFromStrategy(q(node).property('strategy'), baseNode)}
+}
+
+prototype(Futjikato.FlexTeaser:FallbackTeaser) < prototype(TYPO3.Neos:Content) {
+    templatePath = 'resource://Futjikato.FlexTeaser/Private/Templates/FallbackTeaser.html'
+    pageTitle = ${q(node).property('title')}
+}

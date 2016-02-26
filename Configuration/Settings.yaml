@@ -1,0 +1,14 @@
+TYPO3:
+  TypoScript:
+    defaultContext:
+      'Futjikato.Strategy': 'Futjikato\FlexTeaser\Eel\Helper\StrategyHelper'
+
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          'Futjikato.FlexTeaser': ['NodeTypes/*']
+
+    typoScript:
+      autoInclude:
+        'Futjikato.FlexTeaser': TRUE
