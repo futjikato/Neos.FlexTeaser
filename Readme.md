@@ -4,6 +4,8 @@ This module comes with a teaser module that is
 essentially a frame for you to create teasers
 with.
 
+![Teaser inspector](https://github.com/futjikato/Neos.FlexTeaser/blob/master/Documentation/Assets/TeaserInspector.png)
+
 ## Installation
 
 `composer require futjikato/flexteaser`
