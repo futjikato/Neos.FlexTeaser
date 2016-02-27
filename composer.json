@@ -1,11 +1,18 @@
 {
     "description": "Package providing a flexible teaser.",
     "type": "neos-package",
+    "license": "MIT",
     "require": {
         "typo3/flow": "*",
         "typo3/neos": "*"
     },
     "name": "futjikato/flexteaser",
+    "authors": [
+        {
+            "name": "Moritz Spindelhirn",
+            "email": "m.spindelhirn@cashiers-check.de"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "Futjikato\\FlexTeaser": "Classes/"
