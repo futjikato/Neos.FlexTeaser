@@ -5,9 +5,18 @@
             <trans-unit id="ui.label" xml:space="preserve">
 				<source>Flexibel teaser</source>
 			</trans-unit>
-            <trans-unit id="properties.renderer.ui.label" xml:space="preserve">
-				<source>Teaser type</source>
+            <trans-unit id="properties.renderer" xml:space="preserve">
+				<source>Teaser layout</source>
 			</trans-unit>
+            <trans-unit id="properties.strategy" xml:space="preserve">
+				<source>Selection strategy</source>
+			</trans-unit>
+            <trans-unit id="properties.teaserPage" xml:space="preserve">
+				<source>Base page</source>
+			</trans-unit>
+            <trans-unit id="groups.teaser" xml:space="preserve">
+                <source>Teaser information</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
