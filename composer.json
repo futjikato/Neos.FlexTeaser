@@ -1,6 +1,6 @@
 {
     "description": "Package providing a flexible teaser.",
-    "type": "neos-package",
+    "type": "typo3-flow-plugin",
     "license": "MIT",
     "require": {
         "typo3/flow": "*",
